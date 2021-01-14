@@ -1,0 +1,15 @@
+# dims
+1280 960
+# focal lengths
+1400 1400
+# principle point
+639.5 479.5
+# radial distortion coefficients
+0 0 0 0 0
+# skew coefficient
+0
+# frame world -> cam
+-9.84641e-01 1.72994e-01 -2.35732e-02 5.18527e+02
+1.48848e-01 7.61194e-01 -6.31212e-01 -5.71699e+02
+-9.12521e-02 -6.25026e-01 -7.75252e-01 7.23450e+02
+0.00000e+00 0.00000e+00 0.00000e+00 1.00000e+00
