@@ -1,0 +1,182 @@
+<script src="http://www.google.com/jsapi" type="text/javascript"></script> 
+<script type="text/javascript">google.load("jquery", "1.3.2");</script>
+
+<style type="text/css">
+body {
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+    font-weight:300;
+    font-size:18px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1000px;
+}	
+h1 {
+    font-weight:300;
+}
+
+.disclaimerbox {
+    background-color: #eee;		
+    border: 1px solid #eeeeee;
+    border-radius: 10px ;
+    -moz-border-radius: 10px ;
+    -webkit-border-radius: 10px ;
+    padding: 20px;
+}
+
+video.header-vid {
+    height: 140px;
+    border: 1px solid black;
+    border-radius: 10px ;
+    -moz-border-radius: 10px ;
+    -webkit-border-radius: 10px ;
+}
+
+img.header-img {
+    height: 140px;
+    border: 1px solid black;
+    border-radius: 10px ;
+    -moz-border-radius: 10px ;
+    -webkit-border-radius: 10px ;
+}
+
+img.rounded {
+    border: 0px solid #eeeeee;
+    border-radius: 10px ;
+    -moz-border-radius: 10px ;
+    -webkit-border-radius: 10px ;
+}
+
+a:link,a:visited
+{
+    color: #1367a7;
+    text-decoration: none;
+}
+a:hover {
+    color: #208799;
+  }
+
+  td.dl-link {
+      height: 160px;
+      text-align: center;
+      font-size: 22px;
+  }
+
+  .vert-cent {
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+  }
+
+  hr
+  {
+      border: 0;
+      height: 1px;
+      background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+  }
+</style>
+
+<html>
+<head>
+<title>Fixed Viewpoint Mirror Surface Reconstruction under an Uncalibrated Camera</title>
+<meta property="og:image" content="./asset/splash.png"/>
+<meta property="og:title" content="Fixed Viewpoint Mirror Surface Reconstruction under an Uncalibrated Camera. 2021." />
+</head>
+
+<body>
+<br>
+<center>
+    <span style="font-size:42px">Fixed Viewpoint Mirror Surface Reconstruction under an Uncalibrated Camera</span><br>
+
+    <table align=center width=1000px>
+        <tr>
+            <td align=center width=1000px>
+                <span style="font-size:22px"><a href="http://www.hankai.org/">Kai Han<sup>1</sup></a></span> &emsp;
+                <span style="font-size:22px"><a href="http://users.cecs.anu.edu.au/~mliu/">Miaomiao Liu<sup>2</sup></a></span> &emsp;
+                <span style="font-size:22px"><a href="http://www.cs.hku.hk/~sdirk">Dirk Schnieders<sup>3</sup></a></span> &emsp;
+                <span style="font-size:22px"><a href="http://www.cs.hku.hk/~kykwong">Kwan-Yee K. Wong<sup>3</sup></a></span>
+            </td>
+        </tr>
+    </table>
+
+
+    <span style="font-size:21px"><sup>1</sup>University of Bristol &emsp; <sup>2</sup>Australian National University &emsp; <sup>3</sup>The University of Hong Kong</span>  <br>
+    <br>
+    <br>
+
+    <table align=center width=900px>
+        <tr>
+            <td align=center width=300px>
+                <span style="font-size:22px"><a href='./asset/han21fixed.pdf'> Paper (TIP'21) [PDF]</a></span> &emsp;&emsp;
+                <span style="font-size:22px"><a href='./asset/han21fixed_supp.pdf'> Supplementary [PDF]</a></span> &emsp;&emsp;
+                <span style="font-size:22px"><a href='./asset/han16mirror.pdf'> Paper (CVPR'16) [PDF]</a></span> &emsp;&emsp;
+                <span style="font-size:22px"><a href='https://github.com/k-han/mirror'> Code [MATLAB]</a></span>
+
+            </td>
+        </tr>
+    </table>
+</center>
+<br>
+
+<table align=center width=800px>
+    <tr>
+        <td width=400px>
+            <center>
+                <img class="rounded" src = "./asset/splash.png" height="280px"></img>
+                <br>
+            </center>
+        </td>
+    </tr>
+</table>
+
+<br>
+<hr>
+
+<table align=center width=900px>
+    <center><h1>Abstract</h1></center>
+    <p>
+This paper addresses the problem of mirror surface reconstruction, and  proposes a solution based on observing the reflections of a moving reference plane on the mirror surface. Unlike previous approaches which require tedious calibration, our method can recover the camera intrinsics, the poses of the reference plane, as well as the mirror surface from the observed reflections of the reference plane under at least three unknown distinct poses. We first show that the 3D poses of the reference plane can be estimated from the reflection correspondences established between the images and the reference plane. We then form a bunch of 3D lines from the reflection correspondences, and derive an analytical solution to recover the line projection matrix. We transform the line projection matrix to its equivalent camera projection matrix, and propose a cross-ratio based formulation to optimize the camera projection matrix by minimizing reprojection errors. The mirror surface is then reconstructed based on the optimized cross-ratio constraint. Experimental results on both synthetic and real data are presented, which demonstrate the feasibility and accuracy of our method. 
+    </p>
+</table>
+<hr>
+
+<table align=center width=900px>
+    <center><h1>BibTex</h1></center>
+        <!-- <pre style="background-color: #EBECE4;" > -->
+        <pre style="background-color: #e2e2e2; border: 1px dotted #818181; padding: 5px;">
+        <span class="inner-pre" style="font-size: 14px">
+  @article{han21fixed,
+   title   = {Fixed Viewpoint Mirror Surface Reconstruction under an Uncalibrated Camera},
+   author  = {Kai Han and Miaomiao Liu and Dirk Schnieders and Kwan-Yee K. Wong},
+   journal = {IEEE Transactions on Image Processing (TIP)},
+   year    = {2021}
+  }
+
+  @inproceedings{han16mirror,
+   author    = {Kai Han and Kwan-Yee K. Wong and Dirk Schnieders and Miaomiao Liu},
+   title     = {Mirror Surface Reconstruction under an Uncalibrated Camera},
+   booktitle = {IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
+   year      = {2016}
+  }
+        </span>
+        </pre>
+</table>
+<hr>
+
+<table align=center width=1000px>
+    <tr>
+        <td width=400px>
+            <left>
+            <center><h1>Acknowledgments</h1></center>
+This project is supported by a grant from the Research Grant Council of the Hong Kong (SAR), China, under the project HKU 17203119 and a grant (DE180100628) from Australian Research Council (ARC).
+            </left>
+        </td>
+    </tr>
+</table>
+
+<br><br>
+<p style="text-align:center;font-size:16px;">
+    Webpage template was originally made by <a href="http://web.mit.edu/phillipi/">Phillip Isola</a> and <a href="http://richzhang.github.io/">Richard Zhang</a> for a <a href="http://richzhang.github.io/colorization/">colorful</a> ECCV project; the code can be found <a href="https://github.com/richzhang/webpage-template">here</a>.
+</p>
+</body>
+</html>
+
